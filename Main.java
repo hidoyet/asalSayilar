@@ -3,17 +3,17 @@ package asalSayilar;
 public class Main {
 
 	public static void main(String[] args) {
-		// 100'e kadar olan asal sayıları yazdıran program
+		//4'ten 100'e kadar olan asal sayÄ±larÄ± yazdÄ±ran program
 		
-		for(int i=2;i<=100;i++) {
-			boolean asal=true;
-			for(int j=2;j<i;j++) {
+		for(int i=4;i<=100;i++) {
+			boolean isPrime=true;
+			for(int j=4;j<i;j++) {
 				if(i%j==0) {
-					asal=false;
+					isPrime=false;
 					break;				
 				}				
 			}
-			if(asal)
+			if(isPrime)
 			System.out.print(i+" ");			
 		}
 		
